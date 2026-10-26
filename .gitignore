@@ -10,6 +10,7 @@ build
 
 # Generated files
 apps/web/src/routeTree.gen.ts
+apps/web/dev-dist/
 local.db
 local.db-*
 
@@ -50,6 +51,12 @@ lerna-debug.log*
 # Testing
 coverage
 .nyc_output
+
+# Playwright
+/test-results/
+/playwright-report/
+/apps/web/test-results/
+/apps/web/playwright-report/
 
 # Misc
 *.tgz

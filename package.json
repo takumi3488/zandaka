@@ -30,17 +30,23 @@
     "db:migrate:local": "turbo run db:migrate:local -F web --",
     "env:generate": "varlock codegen --path ./apps/web/ && varlock codegen --path ./packages/db/",
     "postinstall": "varlock codegen --path ./apps/web/ && varlock codegen --path ./packages/db/",
-    "check": "oxlint && oxfmt --write"
+    "check": "turbo run check-types && oxlint",
+    "fmt": "oxfmt --write",
+    "fmt:check": "oxfmt --check",
+    "test:api": "bun run --cwd packages/api test",
+    "test:e2e": "playwright test --config apps/web/playwright.config.ts"
   },
   "dependencies": {
     "zod": "catalog:"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20260906.1",
+    "@playwright/test": "1.64.1",
     "@types/node": "^26.4.1",
     "@zandaka/config": "workspace:*",
     "oxfmt": "^0.74.0",
     "oxlint": "^1.87.0",
+    "tsx": "^4",
     "turbo": "^2.11.7",
     "typescript": "catalog:",
     "varlock": "catalog:"

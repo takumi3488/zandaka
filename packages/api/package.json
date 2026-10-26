@@ -7,18 +7,24 @@
   },
   "scripts": {
     "build": "tsc -b",
-    "check-types": "tsc -b"
+    "check-types": "tsc -b",
+    "test": "node --import tsx --test --test-timeout=60000 src/*.test.ts"
   },
   "dependencies": {
+    "@openrouter/ai-sdk-provider": "^3.1.0",
     "@orpc/client": "catalog:",
     "@orpc/openapi": "catalog:",
     "@orpc/server": "catalog:",
     "@orpc/zod": "catalog:",
     "@zandaka/db": "workspace:*",
+    "ai": "^7.0.153",
+    "drizzle-orm": "1.0.0-rc.5",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@zandaka/config": "workspace:*",
+    "miniflare": "5.20261019.2-beta",
+    "tsx": "^4",
     "typescript": "catalog:"
   }
 }

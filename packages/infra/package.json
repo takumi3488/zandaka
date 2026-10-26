@@ -9,6 +9,8 @@
     "destroy": "alchemy destroy"
   },
   "dependencies": {
+    "@zandaka/api": "workspace:*",
+    "@zandaka/db": "workspace:*",
     "zod": "catalog:"
   },
   "devDependencies": {

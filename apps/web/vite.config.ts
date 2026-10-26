@@ -52,10 +52,10 @@ export default defineConfig(({ command }) => {
           globPatterns: ["**/*.{js,css,html,png,svg,ico}"],
         },
         manifest: {
-          name: "zandaka",
+          name: "共有資金の出納帳",
           short_name: "zandaka",
-          description: "zandaka - PWA Application",
-          theme_color: "#0c0c0c",
+          description: "共有URLで資金の入出金を管理する出納帳",
+          theme_color: "#F2F6FC",
         },
         pwaAssets: { disabled: false, config: true },
         devOptions: { enabled: true },

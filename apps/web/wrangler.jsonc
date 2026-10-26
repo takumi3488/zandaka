@@ -12,4 +12,17 @@
       "migrations_pattern": "../../packages/db/src/migrations/*/migration.sql",
     },
   ],
+  "r2_buckets": [
+    {
+      "binding": "RECEIPTS",
+      "bucket_name": "zandaka-receipts-local",
+    },
+  ],
+  "ratelimits": [
+    {
+      "name": "LLM_SCAN_LIMIT",
+      "namespace_id": "18360231",
+      "simple": { "limit": 10, "period": 60 },
+    },
+  ],
 }

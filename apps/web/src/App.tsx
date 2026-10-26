@@ -18,8 +18,8 @@ export default function App() {
       <Router>
         {(props) => (
           <>
-            <Title>zandaka</Title>
-            <div class="grid h-svh grid-rows-[auto_1fr]">
+            <Title>共有資金の出納帳 | zandaka</Title>
+            <div class="app-shell">
               <Header />
               <Loading fallback={<Loader />}>{props.children}</Loading>
             </div>

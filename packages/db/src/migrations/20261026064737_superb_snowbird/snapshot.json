@@ -1,0 +1,512 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "id": "7bcc3085-d4c2-4afb-a0c2-3ba456098e79",
+  "prevIds": ["00000000-0000-0000-0000-000000000000"],
+  "ddl": [
+    {
+      "name": "entries",
+      "entityType": "tables"
+    },
+    {
+      "name": "entry_batches",
+      "entityType": "tables"
+    },
+    {
+      "name": "funds",
+      "entityType": "tables"
+    },
+    {
+      "name": "receipts",
+      "entityType": "tables"
+    },
+    {
+      "table": "entries",
+      "name": "id",
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entries",
+      "name": "fund_id",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entries",
+      "name": "submission_id",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entries",
+      "name": "occurred_on",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entries",
+      "name": "kind",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entries",
+      "name": "amount_yen",
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entries",
+      "name": "description",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entries",
+      "name": "receipt_id",
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entries",
+      "name": "version",
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entries",
+      "name": "created_at",
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entries",
+      "name": "updated_at",
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entry_batches",
+      "name": "fund_id",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entry_batches",
+      "name": "submission_id",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entry_batches",
+      "name": "request_hash",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entry_batches",
+      "name": "entry_ids",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entry_batches",
+      "name": "receipt_id",
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entry_batches",
+      "name": "created_at",
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "funds",
+      "name": "id",
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "funds",
+      "name": "name",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "funds",
+      "name": "opening_balance_yen",
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "funds",
+      "name": "created_at",
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "receipts",
+      "name": "id",
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "receipts",
+      "name": "fund_id",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "receipts",
+      "name": "object_key",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "receipts",
+      "name": "mime_type",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "receipts",
+      "name": "size_bytes",
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "receipts",
+      "name": "state",
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "receipts",
+      "name": "created_at",
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "entityType": "columns"
+    },
+    {
+      "table": "entries",
+      "name": "entries_fund_id_occurred_on_created_at_id_idx",
+      "columns": [
+        {
+          "value": "fund_id",
+          "isExpression": false
+        },
+        {
+          "value": "occurred_on",
+          "isExpression": false
+        },
+        {
+          "value": "created_at",
+          "isExpression": false
+        },
+        {
+          "value": "id",
+          "isExpression": false
+        }
+      ],
+      "isUnique": false,
+      "where": null,
+      "origin": "manual",
+      "entityType": "indexes"
+    },
+    {
+      "table": "entries",
+      "name": "entries_fund_id_receipt_id_idx",
+      "columns": [
+        {
+          "value": "fund_id",
+          "isExpression": false
+        },
+        {
+          "value": "receipt_id",
+          "isExpression": false
+        }
+      ],
+      "isUnique": false,
+      "where": null,
+      "origin": "manual",
+      "entityType": "indexes"
+    },
+    {
+      "table": "receipts",
+      "name": "receipts_object_key_unique",
+      "columns": [
+        {
+          "value": "object_key",
+          "isExpression": false
+        }
+      ],
+      "isUnique": true,
+      "where": null,
+      "origin": "manual",
+      "entityType": "indexes"
+    },
+    {
+      "table": "receipts",
+      "name": "receipts_fund_id_id_unique",
+      "columns": [
+        {
+          "value": "fund_id",
+          "isExpression": false
+        },
+        {
+          "value": "id",
+          "isExpression": false
+        }
+      ],
+      "isUnique": true,
+      "where": null,
+      "origin": "manual",
+      "entityType": "indexes"
+    },
+    {
+      "table": "receipts",
+      "name": "receipts_state_created_at_idx",
+      "columns": [
+        {
+          "value": "state",
+          "isExpression": false
+        },
+        {
+          "value": "created_at",
+          "isExpression": false
+        }
+      ],
+      "isUnique": false,
+      "where": null,
+      "origin": "manual",
+      "entityType": "indexes"
+    },
+    {
+      "table": "entries",
+      "name": "entries_fund_id_funds_id_fk",
+      "columns": ["fund_id"],
+      "tableTo": "funds",
+      "columnsTo": ["id"],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "nameExplicit": true,
+      "entityType": "fks"
+    },
+    {
+      "table": "entries",
+      "name": "entries_fund_id_submission_id_entry_batches_fk",
+      "columns": ["fund_id", "submission_id"],
+      "tableTo": "entry_batches",
+      "columnsTo": ["fund_id", "submission_id"],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "nameExplicit": true,
+      "entityType": "fks"
+    },
+    {
+      "table": "entries",
+      "name": "entries_fund_id_receipt_id_receipts_fk",
+      "columns": ["fund_id", "receipt_id"],
+      "tableTo": "receipts",
+      "columnsTo": ["fund_id", "id"],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "nameExplicit": true,
+      "entityType": "fks"
+    },
+    {
+      "table": "entry_batches",
+      "name": "entry_batches_fund_id_funds_id_fk",
+      "columns": ["fund_id"],
+      "tableTo": "funds",
+      "columnsTo": ["id"],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "nameExplicit": true,
+      "entityType": "fks"
+    },
+    {
+      "table": "receipts",
+      "name": "receipts_fund_id_funds_id_fk",
+      "columns": ["fund_id"],
+      "tableTo": "funds",
+      "columnsTo": ["id"],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "nameExplicit": true,
+      "entityType": "fks"
+    },
+    {
+      "table": "entry_batches",
+      "name": "entry_batches_fund_id_submission_id_pk",
+      "columns": ["fund_id", "submission_id"],
+      "nameExplicit": true,
+      "entityType": "pks"
+    },
+    {
+      "table": "entries",
+      "name": "entries_pk",
+      "columns": ["id"],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "table": "funds",
+      "name": "funds_pk",
+      "columns": ["id"],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "table": "receipts",
+      "name": "receipts_pk",
+      "columns": ["id"],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "table": "entries",
+      "name": "entries_kind_check",
+      "value": "\"kind\" IN ('income', 'expense')",
+      "entityType": "checks"
+    },
+    {
+      "table": "entries",
+      "name": "entries_amount_yen_range",
+      "value": "typeof(\"amount_yen\") = 'integer' AND \"amount_yen\" BETWEEN 1 AND 999999999999",
+      "entityType": "checks"
+    },
+    {
+      "table": "entries",
+      "name": "entries_version_positive",
+      "value": "typeof(\"version\") = 'integer' AND \"version\" >= 1",
+      "entityType": "checks"
+    },
+    {
+      "table": "funds",
+      "name": "funds_opening_balance_yen_range",
+      "value": "typeof(\"opening_balance_yen\") = 'integer' AND \"opening_balance_yen\" BETWEEN -999999999999 AND 999999999999",
+      "entityType": "checks"
+    },
+    {
+      "table": "receipts",
+      "name": "receipts_state_check",
+      "value": "\"state\" IN ('uploading', 'ready', 'deleting')",
+      "entityType": "checks"
+    }
+  ],
+  "renames": []
+}

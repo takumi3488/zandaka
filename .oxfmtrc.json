@@ -1,3 +1,8 @@
 {
-  "ignorePatterns": []
+  "ignorePatterns": [
+    "test-results/**",
+    "playwright-report/**",
+    "apps/web/test-results/**",
+    "apps/web/playwright-report/**"
+  ]
 }

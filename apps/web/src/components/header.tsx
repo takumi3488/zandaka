@@ -1,17 +1,15 @@
-import { For } from "solid-js";
-
 export default function Header() {
-  const links = [{ to: "/", label: "Home" }];
-
   return (
-    <div>
-      <div class="flex flex-row items-center justify-between px-2 py-1">
-        <nav class="flex gap-4 text-lg">
-          <For each={links}>{(link) => <a href={link.to}>{link.label}</a>}</For>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand-link" href="/">
+          zandaka
+        </a>
+        <nav class="site-nav" aria-label="メインナビゲーション">
+          <a href="/">ホーム</a>
+          <a href="/admin">資金を作成（管理者）</a>
         </nav>
-        <div class="flex items-center gap-2"></div>
       </div>
-      <hr />
-    </div>
+    </header>
   );
 }

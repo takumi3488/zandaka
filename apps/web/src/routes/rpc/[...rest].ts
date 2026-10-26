@@ -1,51 +1,11 @@
-import { OpenAPIHandler } from "@orpc/openapi/fetch";
-import { OpenAPIReferencePlugin } from "@orpc/openapi/plugins";
-import { onError } from "@orpc/server";
-import { RPCHandler } from "@orpc/server/fetch";
-import { ZodToJsonSchemaConverter } from "@orpc/zod/zod4";
-import { appRouter } from "@zandaka/api/routers/index";
 import type { APIHandler } from "filesystem-routing/api";
+
+import { createHttpHandler } from "@zandaka/api/http";
 
 import { createContext } from "../../context";
 
-const rpcHandler = new RPCHandler(appRouter, {
-  interceptors: [
-    onError((error) => {
-      console.error(error);
-    }),
-  ],
-});
-
-const apiHandler = new OpenAPIHandler(appRouter, {
-  plugins: [
-    new OpenAPIReferencePlugin({
-      schemaConverters: [new ZodToJsonSchemaConverter()],
-    }),
-  ],
-  interceptors: [
-    onError((error) => {
-      console.error(error);
-    }),
-  ],
-});
-
-const handle: APIHandler = async ({ request }) => {
-  const context = await createContext({ headers: request.headers });
-
-  const rpcResult = await rpcHandler.handle(request, {
-    prefix: "/rpc",
-    context,
-  });
-  if (rpcResult.response) return rpcResult.response;
-
-  const apiResult = await apiHandler.handle(request, {
-    prefix: "/rpc/api-reference",
-    context,
-  });
-  if (apiResult.response) return apiResult.response;
-
-  return new Response("Not found", { status: 404 });
-};
+const handleRequest = createHttpHandler(createContext);
+const handle: APIHandler = ({ request }) => handleRequest(request);
 
 export const HEAD = handle;
 export const GET = handle;

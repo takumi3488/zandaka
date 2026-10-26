@@ -8,9 +8,13 @@ export const route = {
 
 export default function NotFound() {
   return (
-    <main class="container mx-auto max-w-3xl px-4 py-10">
-      <Title>Not Found</Title>
-      <h1 class="text-3xl font-bold">Page not found</h1>
+    <main class="page-shell narrow-page">
+      <Title>ページが見つかりません | zandaka</Title>
+      <section class="paper-section not-found">
+        <h1>ページが見つかりません</h1>
+        <p>URLを確認するか、ホームへ戻ってください。</p>
+        <a href="/">ホームへ戻る</a>
+      </section>
     </main>
   );
 }

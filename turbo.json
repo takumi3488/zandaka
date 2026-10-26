@@ -16,7 +16,18 @@
     },
     "dev": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      "passThroughEnv": [
+        "CLOUDFLARE_ACCOUNT_ID",
+        "CLOUDFLARE_API_TOKEN",
+        "MASTER_KEY",
+        "OPENROUTER_API_KEY"
+      ]
+    },
+    "dev:bare": {
+      "cache": false,
+      "persistent": true,
+      "passThroughEnv": ["MASTER_KEY", "OPENROUTER_API_KEY"]
     },
     "start": {
       "dependsOn": ["build"],
@@ -34,7 +45,13 @@
     },
     "deploy": {
       "cache": false,
-      "interactive": true
+      "interactive": true,
+      "passThroughEnv": [
+        "CLOUDFLARE_ACCOUNT_ID",
+        "CLOUDFLARE_API_TOKEN",
+        "MASTER_KEY",
+        "OPENROUTER_API_KEY"
+      ]
     },
     "destroy": {
       "cache": false,
