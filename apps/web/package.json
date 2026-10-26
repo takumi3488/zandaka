@@ -34,16 +34,16 @@
   },
   "devDependencies": {
     "@solidjs/vite-plugin": "3.0.0-next.51",
-    "@tailwindcss/vite": "^4.3.3",
-    "@vite-pwa/assets-generator": "^2.0.0",
+    "@tailwindcss/vite": "4.3.3",
+    "@vite-pwa/assets-generator": "2.0.0",
     "@zandaka/config": "workspace:*",
     "@zandaka/infra": "workspace:*",
     "filesystem-routing": "0.4.1",
-    "tailwindcss": "^4.3.3",
+    "tailwindcss": "4.3.3",
     "typescript": "catalog:",
-    "vite": "^8.2.2",
-    "workbox-window": "^7.4.1",
-    "wrangler": "^4.152.0"
+    "vite": "8.3.5",
+    "workbox-window": "7.4.1",
+    "wrangler": "4.153.0"
   },
   "engines": {
     "node": ">=24"
