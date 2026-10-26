@@ -24,7 +24,7 @@
   "devDependencies": {
     "@zandaka/config": "workspace:*",
     "miniflare": "5.20261019.2-beta",
-    "tsx": "^4",
+    "tsx": "4.23.15",
     "typescript": "catalog:"
   }
 }
