@@ -18,7 +18,7 @@
     "@orpc/zod": "catalog:",
     "@zandaka/db": "workspace:*",
     "ai": "^7.0.153",
-    "drizzle-orm": "1.0.0-rc.5",
+    "drizzle-orm": "1.0.0-rc.5-ab785fc",
     "zod": "catalog:"
   },
   "devDependencies": {
