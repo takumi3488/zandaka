@@ -1,0 +1,16 @@
+node_modules
+.DS_Store
+dist
+.output
+.vercel
+.netlify
+*.local
+.env
+.env.*
+
+.wrangler
+.alchemy
+.dev.vars*
+
+!.env.schema
+/src/env.ts

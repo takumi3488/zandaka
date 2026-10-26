@@ -1,0 +1,26 @@
+{
+  "name": "@zandaka/db",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "check-types": "tsc -b",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate:deploy": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@libsql/client": "catalog:",
+    "drizzle-orm": "1.0.0-rc.5",
+    "libsql": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@zandaka/config": "workspace:*",
+    "drizzle-kit": "1.0.0-rc.5",
+    "typescript": "catalog:",
+    "varlock": "catalog:"
+  }
+}

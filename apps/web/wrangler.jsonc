@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zandaka-web",
+  "compatibility_date": "2025-05-05",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "zandaka-db-local",
+      "database_id": "local",
+      "migrations_dir": "../../packages/db/src/migrations",
+      "migrations_pattern": "../../packages/db/src/migrations/*/migration.sql",
+    },
+  ],
+}

@@ -1,0 +1,3 @@
+{
+  "extends": "@zandaka/config/tsconfig.base.json"
+}

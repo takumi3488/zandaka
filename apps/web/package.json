@@ -1,0 +1,51 @@
+{
+  "name": "web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b ../../packages/api && vite build",
+    "check-types": "tsc -b ../../packages/api && tsc --noEmit",
+    "start": "vite preview",
+    "preview": "vite preview",
+    "generate-pwa-assets": "pwa-assets-generator",
+    "dev:bare": "vite dev",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local",
+    "env:generate": "varlock codegen"
+  },
+  "dependencies": {
+    "@libsql/client": "catalog:",
+    "@orpc/client": "catalog:",
+    "@orpc/openapi": "catalog:",
+    "@orpc/server": "catalog:",
+    "@orpc/tanstack-query": "^1.15.6",
+    "@orpc/zod": "catalog:",
+    "@solidjs/meta": "1.0.0-next.2",
+    "@solidjs/router": "2.0.0-next.42",
+    "@solidjs/web": "2.0.0-rc.18",
+    "@tanstack/query-core": "5.101.4",
+    "@tanstack/solid-query": "6.0.0-rc.5",
+    "@zandaka/api": "workspace:*",
+    "@zandaka/db": "workspace:*",
+    "libsql": "catalog:",
+    "solid-js": "2.0.0-rc.18",
+    "varlock": "catalog:",
+    "vite-plugin-pwa": "^2.0.0",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@solidjs/vite-plugin": "3.0.0-next.51",
+    "@tailwindcss/vite": "^4.3.3",
+    "@vite-pwa/assets-generator": "^2.0.0",
+    "@zandaka/config": "workspace:*",
+    "@zandaka/infra": "workspace:*",
+    "filesystem-routing": "0.4.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "catalog:",
+    "vite": "^8.2.2",
+    "workbox-window": "^7.4.1",
+    "wrangler": "^4.152.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

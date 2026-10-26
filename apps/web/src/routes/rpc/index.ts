@@ -1,0 +1,1 @@
+export { DELETE, GET, HEAD, PATCH, POST, PUT } from "./[...rest]";

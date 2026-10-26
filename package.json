@@ -1,0 +1,55 @@
+{
+  "name": "zandaka",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ],
+    "catalog": {
+      "zod": "^4.5.4",
+      "typescript": "^6.0.3",
+      "varlock": "1.23.0",
+      "@libsql/client": "0.18.0",
+      "libsql": "0.5.29",
+      "@orpc/server": "^1.15.6",
+      "@orpc/client": "^1.15.6",
+      "@orpc/openapi": "^1.15.6",
+      "@orpc/zod": "^1.15.6"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "check-types": "turbo run check-types",
+    "dev:web": "turbo run dev:bare -F web --",
+    "db:generate": "turbo run db:generate -F @zandaka/db --",
+    "deploy": "turbo run deploy -F @zandaka/infra --",
+    "destroy": "turbo run destroy -F @zandaka/infra --",
+    "db:migrate:local": "turbo run db:migrate:local -F web --",
+    "env:generate": "varlock codegen --path ./apps/web/ && varlock codegen --path ./packages/db/",
+    "postinstall": "varlock codegen --path ./apps/web/ && varlock codegen --path ./packages/db/",
+    "check": "oxlint && oxfmt --write"
+  },
+  "dependencies": {
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260906.1",
+    "@types/node": "^26.4.1",
+    "@zandaka/config": "workspace:*",
+    "oxfmt": "^0.74.0",
+    "oxlint": "^1.87.0",
+    "turbo": "^2.11.7",
+    "typescript": "catalog:",
+    "varlock": "catalog:"
+  },
+  "overrides": {
+    "@solidjs/babel-plugin": "2.0.0-rc.18",
+    "@solidjs/compiler": "2.0.0-rc.18",
+    "@solidjs/signals": "2.0.0-rc.18",
+    "solid-js": "2.0.0-rc.18"
+  },
+  "packageManager": "bun@1.4.4"
+}
