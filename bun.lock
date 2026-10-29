@@ -32,7 +32,7 @@
         "@solidjs/meta": "1.0.0-next.2",
         "@solidjs/router": "2.0.0-next.42",
         "@solidjs/web": "2.0.0-rc.18",
-        "@tanstack/query-core": "5.104.5",
+        "@tanstack/query-core": "5.105.0",
         "@tanstack/solid-query": "6.0.0-rc.5",
         "@zandaka/api": "workspace:*",
         "@zandaka/db": "workspace:*",
@@ -118,7 +118,7 @@
     "@solidjs/babel-plugin": "2.0.0-rc.18",
     "@solidjs/compiler": "2.0.0-rc.18",
     "@solidjs/signals": "2.0.0-rc.18",
-    "@tanstack/query-core": "5.104.5",
+    "@tanstack/query-core": "5.105.0",
     "solid-js": "2.0.0-rc.18",
   },
   "catalog": {
@@ -875,7 +875,7 @@
 
     "@tailwindcss/vite": ["@tailwindcss/vite@4.3.3", "", { "dependencies": { "@tailwindcss/node": "4.3.3", "@tailwindcss/oxide": "4.3.3", "tailwindcss": "4.3.3" }, "peerDependencies": { "vite": "^5.2.0 || ^6 || ^7 || ^8" } }, "sha512-yYU8cogLeSh/ms2jh8Fj7jaba/EWa7Ja6GoUqYZaraEuCI5YS6ms6ObZgjjedm+jm6XZjdNRWBpPP6Z86oOxcw=="],
 
-    "@tanstack/query-core": ["@tanstack/query-core@5.104.5", "", {}, "sha512-Q94gI8Opd+CbdVNOdj8ZCyV8WqLYitrDq1t96Xc8WZT6lY0r5iRnJLXYDxMex7EEf2v+mXvn4FcjaBKSxXZQ9A=="],
+    "@tanstack/query-core": ["@tanstack/query-core@5.105.0", "", {}, "sha512-7p56vRmT/z4UJ6sctGIdl5WRUQyUv53IUpUwEKi2g97zMbO7zh8ZsCLffGAvCPBR4xD72e3VXsDyLwXHhoNTMQ=="],
 
     "@tanstack/solid-query": ["@tanstack/solid-query@6.0.0-rc.5", "", { "dependencies": { "@tanstack/query-core": "5.101.4" }, "peerDependencies": { "@solidjs/web": ">=2.0.0-rc.13 <3.0.0", "solid-js": ">=2.0.0-rc.13 <3.0.0" } }, "sha512-O9lD2JRgaN2ZS4ROBPL6HLPbPJ4FvnUsVe7j6FSxhE3GI8a5ntZbAj5zrTtmny6rSzhdcBuMB38R53tHIuXJkw=="],
 
