@@ -20,7 +20,7 @@
     "@orpc/tanstack-query": "^1.15.6",
     "@orpc/zod": "catalog:",
     "@solidjs/meta": "1.0.0-next.2",
-    "@solidjs/router": "2.0.0-next.42",
+    "@solidjs/router": "2.0.0-next.43",
     "@solidjs/web": "2.0.0-rc.19",
     "@tanstack/query-core": "5.105.0",
     "@tanstack/solid-query": "6.0.0-rc.5",
@@ -33,7 +33,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@solidjs/vite-plugin": "3.0.0-next.51",
+    "@solidjs/vite-plugin": "3.0.0-next.52",
     "@tailwindcss/vite": "4.3.3",
     "@vite-pwa/assets-generator": "2.0.0",
     "@zandaka/config": "workspace:*",
