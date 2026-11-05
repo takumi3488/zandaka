@@ -33,7 +33,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@solidjs/vite-plugin": "3.0.0-next.54",
+    "@solidjs/vite-plugin": "3.0.0-next.55",
     "@tailwindcss/vite": "4.3.3",
     "@vite-pwa/assets-generator": "2.0.0",
     "@zandaka/config": "workspace:*",
@@ -43,7 +43,7 @@
     "typescript": "catalog:",
     "vite": "8.3.5",
     "workbox-window": "7.4.1",
-    "wrangler": "4.156.0"
+    "wrangler": "4.156.1"
   },
   "engines": {
     "node": ">=24"
