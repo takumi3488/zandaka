@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   test:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     timeout-minutes: 20
     concurrency:
       group: ${{ github.workflow }}-ci-${{ github.event.pull_request.number || github.ref }}
@@ -66,7 +66,7 @@ jobs:
           retention-days: 3
 
   deploy:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     timeout-minutes: 30
     needs: test
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && needs.test.result == 'success' }}
@@ -125,7 +125,7 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: bun run deploy --stage production --yes --no-input
   automerge:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     timeout-minutes: 5
     needs: test
     if: ${{ needs.test.result == 'success' && github.event_name == 'pull_request' && github.event.pull_request.user.login == 'renovate[bot]' }}
