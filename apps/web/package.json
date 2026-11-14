@@ -41,7 +41,7 @@
     "filesystem-routing": "0.5.0",
     "tailwindcss": "4.3.5",
     "typescript": "catalog:",
-    "vite": "8.3.7",
+    "vite": "8.3.8",
     "workbox-window": "7.4.1",
     "wrangler": "4.160.0"
   },
