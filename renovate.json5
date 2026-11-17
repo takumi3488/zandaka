@@ -1,11 +1,9 @@
 {
-  extends: [
-    'config:best-practices',
-  ],
+  extends: ["config:best-practices"],
   dependencyDashboard: {
     enabled: false,
   },
-  minimumReleaseAge: '3 days',
+  minimumReleaseAge: "3 days",
   lockFileMaintenance: {
     minimumReleaseAge: null,
   },
@@ -14,34 +12,20 @@
   },
   packageRules: [
     {
-      matchUpdateTypes: [
-        'minor',
-        'patch',
-        'digest',
-        'pinDigest',
-      ],
-      groupName: 'all minor, patch, and digest updates',
-      groupSlug: 'all-minor-patch-digest-updates',
+      matchUpdateTypes: ["minor", "patch", "digest", "pinDigest"],
+      groupName: "all minor, patch, and digest updates",
+      groupSlug: "all-minor-patch-digest-updates",
     },
     {
-      matchUpdateTypes: [
-        'major',
-      ],
-      prBodyNotes: [
-        '<!-- renovate-major-update -->',
-      ],
+      matchUpdateTypes: ["major"],
+      prBodyNotes: ["<!-- renovate-major-update -->"],
     },
     {
-      matchManagers: [
-        'github-actions',
-      ],
-      minimumReleaseAge: '7 days',
+      matchManagers: ["github-actions"],
+      minimumReleaseAge: "7 days",
     },
     {
-      matchUpdateTypes: [
-        'digest',
-        'pinDigest',
-      ],
+      matchUpdateTypes: ["digest", "pinDigest"],
       minimumReleaseAge: null,
     },
   ],
