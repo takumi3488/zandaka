@@ -1,6 +1,8 @@
 {
   extends: ["config:best-practices"],
-  dependencyDashboard: false,
+  dependencyDashboard: {
+    enabled: false,
+  },
   minimumReleaseAge: "3 days",
   lockFileMaintenance: {
     minimumReleaseAge: null,
@@ -23,10 +25,6 @@
       minimumReleaseAge: "7 days",
     },
     {
-      // digest/pinDigest updates have no releaseTimestamp, so minimumReleaseAge
-      // (with the default minimumReleaseAgeBehaviour "timestamp-required") keeps
-      // renovate/stability-days pending forever. Must stay last to override the
-      // github-actions rule above.
       matchUpdateTypes: ["digest", "pinDigest"],
       minimumReleaseAge: null,
     },
