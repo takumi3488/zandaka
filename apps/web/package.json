@@ -22,7 +22,7 @@
     "@solidjs/meta": "1.0.0-next.2",
     "@solidjs/router": "2.0.0",
     "@solidjs/web": "2.0.0",
-    "@tanstack/query-core": "5.107.1",
+    "@tanstack/query-core": "5.108.0",
     "@tanstack/solid-query": "6.0.0-rc.5",
     "@zandaka/api": "workspace:*",
     "@zandaka/db": "workspace:*",
@@ -43,7 +43,7 @@
     "typescript": "catalog:",
     "vite": "8.3.8",
     "workbox-window": "7.4.1",
-    "wrangler": "4.163.0"
+    "wrangler": "4.164.0"
   },
   "engines": {
     "node": ">=24"
