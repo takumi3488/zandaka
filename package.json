@@ -40,23 +40,23 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "5.20261116.1",
+    "@cloudflare/workers-types": "5.20261117.1",
     "@playwright/test": "1.65.1",
     "@types/node": "26.6.6",
     "@zandaka/config": "workspace:*",
-    "oxfmt": "0.78.0",
-    "oxlint": "1.93.0",
+    "oxfmt": "0.79.0",
+    "oxlint": "1.94.0",
     "tsx": "4.23.15",
     "turbo": "2.11.11",
     "typescript": "catalog:",
     "varlock": "catalog:"
   },
   "overrides": {
-    "@solidjs/babel-plugin": "2.0.0-rc.22",
-    "@solidjs/compiler": "2.0.0-rc.22",
-    "@solidjs/signals": "2.0.0-rc.22",
+    "@solidjs/babel-plugin": "2.0.0",
+    "@solidjs/compiler": "2.0.0",
+    "@solidjs/signals": "2.0.0",
     "@tanstack/query-core": "5.107.1",
-    "solid-js": "2.0.0-rc.22"
+    "solid-js": "2.0.0"
   },
   "packageManager": "bun@1.4.4"
 }
