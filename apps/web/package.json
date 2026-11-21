@@ -23,7 +23,7 @@
     "@solidjs/router": "2.0.0",
     "@solidjs/web": "2.0.0",
     "@tanstack/query-core": "5.108.0",
-    "@tanstack/solid-query": "6.0.0-rc.5",
+    "@tanstack/solid-query": "6.0.0-rc.6",
     "@zandaka/api": "workspace:*",
     "@zandaka/db": "workspace:*",
     "libsql": "catalog:",
@@ -33,7 +33,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@solidjs/vite-plugin": "3.0.0",
+    "@solidjs/vite-plugin": "3.0.1",
     "@tailwindcss/vite": "4.3.5",
     "@vite-pwa/assets-generator": "2.0.0",
     "@zandaka/config": "workspace:*",
