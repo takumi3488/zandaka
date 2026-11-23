@@ -20,7 +20,7 @@
     "@orpc/tanstack-query": "^1.15.6",
     "@orpc/zod": "catalog:",
     "@solidjs/meta": "1.0.0-next.2",
-    "@solidjs/router": "2.0.0",
+    "@solidjs/router": "2.0.1",
     "@solidjs/web": "2.0.3",
     "@tanstack/query-core": "5.108.1",
     "@tanstack/solid-query": "6.0.0-rc.6",
