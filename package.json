@@ -40,9 +40,9 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "5.20261124.2",
+    "@cloudflare/workers-types": "5.20261125.1",
     "@playwright/test": "1.65.1",
-    "@types/node": "26.6.7",
+    "@types/node": "26.6.10",
     "@zandaka/config": "workspace:*",
     "oxfmt": "0.80.0",
     "oxlint": "1.95.0",
@@ -52,11 +52,11 @@
     "varlock": "catalog:"
   },
   "overrides": {
-    "@solidjs/babel-plugin": "2.0.2",
-    "@solidjs/compiler": "2.0.2",
-    "@solidjs/signals": "2.0.3",
+    "@solidjs/babel-plugin": "2.0.3",
+    "@solidjs/compiler": "2.0.3",
+    "@solidjs/signals": "2.0.4",
     "@tanstack/query-core": "5.108.4",
-    "solid-js": "2.0.3"
+    "solid-js": "2.0.4"
   },
   "packageManager": "bun@1.4.5"
 }
